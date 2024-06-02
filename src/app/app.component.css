@@ -1,0 +1,11 @@
+.app-body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content {
+  flex: 1 1 auto;
+  padding: 8px;
+}

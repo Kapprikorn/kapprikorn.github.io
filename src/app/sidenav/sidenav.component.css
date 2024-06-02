@@ -1,0 +1,18 @@
+.nav-container {
+  position: relative;
+  height: 100%;
+  width: 50px;
+  padding: 8px 0;
+
+  box-shadow:
+    rgb(0,0,0,0.2) 0 0 2px,
+    rgb(0,0,0,0.2) 0 0 4px,
+    rgb(0,0,0,0.2) 0 0 6px,
+    rgb(0,0,0,0.2) 0 0 8px,
+    rgb(0,0,0,0.2) 0 0 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
