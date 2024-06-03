@@ -4,6 +4,7 @@
   width: 50px;
   padding: 8px 0;
 
+  background-color: var(--mat-app-background-color);
   box-shadow:
     rgb(0,0,0,0.2) 0 0 2px,
     rgb(0,0,0,0.2) 0 0 4px,
@@ -15,6 +16,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  gap: 8px;
 }
 
 @media screen and (max-width : 100vh) {

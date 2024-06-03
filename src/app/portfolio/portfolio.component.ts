@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [],
+  imports: [
+    NgOptimizedImage
+  ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })
