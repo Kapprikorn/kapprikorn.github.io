@@ -9,3 +9,9 @@
   flex: 1 1 auto;
   padding: 8px;
 }
+
+@media screen and (max-width: 100vh) {
+  .app-body {
+    flex-direction: column-reverse;
+  }
+}
