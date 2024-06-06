@@ -25,6 +25,10 @@
   justify-content: space-between;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .text-center {
   text-align: center;
 }
@@ -32,9 +36,18 @@
 .p-1 {
   padding: 4px;
 }
-
 .p-2 {
   padding: 8px;
+}
+.p-3 {
+  padding: 16px;
+}
+
+.g-1 {
+  gap: 4px;
+}
+.g-2 {
+  gap: 8px;
 }
 
 .z-1 {

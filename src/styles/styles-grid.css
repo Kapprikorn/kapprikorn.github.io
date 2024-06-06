@@ -1,43 +1,43 @@
 .col-1 {
-  width: 12.5vw;
+  width: 12.5%;
 }
 .col-2 {
-  width: 25vw;
+  width: 25%;
 }
 .col-3 {
-  width: 37.5vw;
+  width: 37.5%;
 }
 .col-4 {
-  width: 50vw;
+  width: 50%;
 }
 .col-5 {
-  width: 62.5vw;
+  width: 62.5%;
 }
 .col-6 {
-  width: 75vw;
+  width: 75%;
 }
 .col-7 {
-  width: 87.5vw;
+  width: 87.5%;
 }
 .col-8 {
-  width: 100vw;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
   .col-1 {
-    width: 25vw;
+    width: 25%;
   }
   .col-2 {
-    width: 50vw;
+    width: 50%;
   }
   .col-3 {
-    width: 75vw;
+    width: 75%;
   }
   .col-4,
   .col-5,
   .col-6,
   .col-7,
   .col-8 {
-    width: 100vw;
+    width: 100%;
   }
 }

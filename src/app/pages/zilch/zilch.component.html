@@ -1,1 +1,12 @@
-<p>zilch works!</p>
+<div class="component-wrapper flex">
+  <div class="game-wrapper p-2 flex flex-col">
+    <div class="dice-tray col-8 p-2 flex flex-wrap g-1">
+      @for (dice of dice; track dice.id) {
+        <app-dice [value]="dice.value"/>
+      }
+    </div>
+  </div>
+  <div class="scores-wrapper p2 flex flex-col">
+
+  </div>
+</div>
