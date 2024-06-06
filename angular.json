@@ -30,9 +30,9 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/azure-blue.css",
-              "src/styles.css",
-              "src/styles-basics.css",
-              "src/styles-grid.css"
+              "src/styles/styles.css",
+              "src/styles/styles-basics.css",
+              "src/styles/styles-grid.css"
             ],
             "scripts": []
           },
@@ -91,7 +91,9 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/azure-blue.css",
-              "src/styles.css"
+              "src/styles/styles.css",
+              "src/styles/styles-basics.css",
+              "src/styles/styles-grid.css"
             ],
             "scripts": []
           }
