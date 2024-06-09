@@ -31,7 +31,7 @@ export class ZilchComponent {
     },
     {
       id: 4,
-      value: 5,
+      value: 4,
     },
     {
       id: 5,
