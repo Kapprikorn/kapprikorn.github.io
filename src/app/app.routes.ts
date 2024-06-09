@@ -16,5 +16,8 @@ export const routes: Routes = [
   },
   {
     path: 'zilch', component: ZilchComponent
+  },
+  {
+    path: '**', redirectTo: ''
   }
 ];
