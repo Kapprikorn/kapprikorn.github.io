@@ -74,6 +74,38 @@ a:hover { color: var(--accent-dark); }
 .pill-gold { background: #FFF1D6; color: #7A4B00; }
 .pill-violet { background: #EEEAFF; color: #4A2FC9; }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.card p {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+@media (max-width: 480px) {
+  .card { padding: 16px; }
+  .card h3 { font-size: 20px; }
+}
+
 .component-wrapper {
   height: 100%;
   width: 100%;

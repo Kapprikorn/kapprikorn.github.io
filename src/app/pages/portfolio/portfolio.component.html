@@ -1,19 +1,29 @@
-<div class="component-wrapper p-3">
-  <div class="flex flex-col flex-center g-3">
-    <div class="games flex flex-wrap flex-center g-3 col-8">
-      <mat-card class="game p-3 flex flex-col flex-center g-2 text-center">
-        <span class="pill pill-gold">Internal testing</span>
-        <h2>Color Blocks 2</h2>
-      </mat-card>
-      <mat-card class="game p-3 flex flex-col flex-center g-2 text-center">
-        <span class="pill pill-violet">Closed beta</span>
-        <h2>Cauldron Cascade</h2>
-        <a href="/cauldron-cascade/privacy-policy/">Privacy policy</a>
-      </mat-card>
+<div class="games container">
+  <header class="intro">
+    <h1>Games</h1>
+    <p>Small, free games with no ads and no tracking. Both are in testing on Google Play right now.</p>
+  </header>
+
+  <div class="cards">
+    <div class="card">
+      <span class="pill pill-gold">Internal testing</span>
+      <h3>Color Blocks 2</h3>
+      <p>Android · Google Play</p>
     </div>
-    <p class="text-center col-4">
-      Want to play early? To test either game, send the email address of your Google account to
-      <a href="mailto:kaprikorn.gamify@gmail.com">kaprikorn.gamify&#64;gmail.com</a>.
-    </p>
+    <div class="card">
+      <span class="pill pill-violet">Closed beta</span>
+      <h3>Cauldron Cascade</h3>
+      <p>Android · Google Play · <a href="/cauldron-cascade/privacy-policy/">Privacy policy</a></p>
+    </div>
   </div>
+
+  <section class="join" aria-labelledby="join-title">
+    <h2 id="join-title">Want to play early?</h2>
+    <p>
+      To test either game, send the email address of your Google account to
+      <a href="mailto:kaprikorn.gamify@gmail.com">kaprikorn.gamify&#64;gmail.com</a>.
+      I'll add you to the tester list and send you the link.
+    </p>
+    <a href="mailto:kaprikorn.gamify@gmail.com" class="btn btn-primary">Join a test</a>
+  </section>
 </div>
