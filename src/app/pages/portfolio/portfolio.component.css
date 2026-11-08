@@ -3,15 +3,18 @@
   max-width: 100%;
 }
 
-.badge {
-  padding: 2px 10px;
-  border-radius: 999px;
-  border: 1px solid currentColor;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
 
 p a {
   overflow-wrap: anywhere;
+}
+
+.pill {
+  align-self: center;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.15;
 }

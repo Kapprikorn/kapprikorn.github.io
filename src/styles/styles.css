@@ -5,8 +5,74 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root {
+  --bg: #FAFAF7;
+  --ink: #17171B;
+  --muted: #4A4A55;
+  --muted-2: #5E5E68;
+  --line: #E6E4DD;
+  --chip: #EEEDE8;
+  --accent: #5B3FE0;
+  --accent-dark: #3F27B0;
+  --gold: #F2B84B;
+  --font-body: Inter, system-ui, sans-serif;
+  --font-display: 'Space Grotesk', Inter, system-ui, sans-serif;
+  --mat-app-background-color: var(--bg);
+}
+
+html, body { min-height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); }
+a:hover { color: var(--accent-dark); }
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (max-width: 480px) {
+  .container { padding-left: 16px; padding-right: 16px; }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+.btn-primary, .btn-primary:hover { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-dark); }
+.btn-secondary { border: 1.5px solid #D6D4CC; color: var(--ink); }
+.btn-secondary:hover { color: var(--ink); background: var(--chip); }
+
+.pill {
+  align-self: flex-start;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.pill-gold { background: #FFF1D6; color: #7A4B00; }
+.pill-violet { background: #EEEAFF; color: #4A2FC9; }
 
 .component-wrapper {
   height: 100%;
