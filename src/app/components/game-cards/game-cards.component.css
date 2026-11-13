@@ -1,0 +1,36 @@
+.head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon {
+  flex: none;
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+}
+
+.card h3 {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.desc {
+  flex: 1;
+  line-height: 1.55;
+}
+
+@media (max-width: 480px) {
+  .icon { width: 64px; height: 64px; border-radius: 16px; }
+  .card h3 { font-size: 20px; }
+}

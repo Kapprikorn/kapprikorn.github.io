@@ -1,0 +1,20 @@
+<div class="cards">
+  @for (game of games; track game.name) {
+    <article class="card">
+      <div class="head">
+        <img [src]="game.icon" alt="" width="72" height="72" class="icon">
+        <div class="title">
+          <span class="pill" [class.pill-gold]="game.status === 'Internal testing'" [class.pill-violet]="game.status === 'Closed beta'">{{ game.status }}</span>
+          <h3>{{ game.name }}</h3>
+        </div>
+      </div>
+      <p class="desc">{{ game.description }}</p>
+      <p class="meta">
+        Android · Google Play
+        @if (game.privacyPolicy) {
+          · <a [href]="game.privacyPolicy">Privacy policy</a>
+        }
+      </p>
+    </article>
+  }
+</div>
