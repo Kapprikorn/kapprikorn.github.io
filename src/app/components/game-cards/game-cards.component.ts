@@ -33,7 +33,8 @@ export class GameCardsComponent {
       name: 'Ledgers & Legends',
       status: 'Closed beta',
       description: "Run a guild in the wild kingdom of Corriveth. Send heroes out on quests, craft their gear, sell the loot in your shop, and research a tech tree that lets the guild run itself, even while you're away.",
-      icon: '/games/ledgers-and-legends.svg'
+      icon: '/games/ledgers-and-legends.png',
+      privacyPolicy: '/ledgers-and-legends/privacy-policy/'
     }
   ];
 }
