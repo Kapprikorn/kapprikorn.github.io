@@ -25,9 +25,21 @@
   line-height: 1.2;
 }
 
+/* Each card spans three rows of the shared grid (header, description,
+   meta line), so those parts line up across cards in the same row. */
+.card {
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  row-gap: 12px;
+}
+
 .desc {
-  flex: 1;
   line-height: 1.55;
+}
+
+.meta {
+  align-self: end;
 }
 
 @media (max-width: 480px) {
