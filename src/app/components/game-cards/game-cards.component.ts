@@ -20,7 +20,8 @@ export class GameCardsComponent {
       name: 'Color Blocks 2',
       status: 'Internal testing',
       description: 'A casual puzzle about sorting and stacking colours. Chase the highest score you can while the game gets harder the longer you play.',
-      icon: '/games/color-blocks-2.png'
+      icon: '/games/color-blocks-2.png',
+      privacyPolicy: '/color-blocks-2/privacy-policy/'
     },
     {
       name: 'Cauldron Cascade',
