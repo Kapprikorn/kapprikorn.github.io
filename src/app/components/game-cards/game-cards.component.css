@@ -1,3 +1,19 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+/* Each card spans three rows of the shared grid (header, description, footer)
+   so those parts line up across cards in the same row. */
+.card {
+  grid-row: span 3;
+  display: grid;
+  grid-template-rows: subgrid;
+  row-gap: 12px;
+  padding: 16px;
+}
+
 .head {
   display: flex;
   align-items: flex-start;
@@ -6,43 +22,60 @@
 
 .icon {
   flex: none;
-  width: 72px;
-  height: 72px;
-  border-radius: 18px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
 }
 
 .title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 6px;
   min-width: 0;
 }
 
-.card h3 {
-  font-size: 22px;
-  line-height: 1.2;
+.chip {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
-/* Each card spans three rows of the shared grid (header, description,
-   meta line), so those parts line up across cards in the same row. */
-.card {
-  display: grid;
-  grid-row: span 3;
-  grid-template-rows: subgrid;
-  row-gap: 12px;
+.chip-outlined {
+  border: 1px solid var(--sys-outline);
+  color: var(--sys-on-surface-variant);
+}
+
+.chip-tonal {
+  background: var(--sys-secondary-container);
+  color: var(--sys-on-secondary-container);
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500;
 }
 
 .desc {
-  line-height: 1.55;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--sys-on-surface-variant);
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .meta {
-  align-self: end;
-}
-
-@media (max-width: 480px) {
-  .icon { width: 64px; height: 64px; border-radius: 16px; }
-  .card h3 { font-size: 20px; }
+  font-size: 14px;
+  color: var(--sys-on-surface-variant);
 }

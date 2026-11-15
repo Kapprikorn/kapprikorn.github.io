@@ -5,32 +5,18 @@
   padding: 0;
 }
 
-:root {
-  --bg: #FAFAF7;
-  --ink: #17171B;
-  --muted: #4A4A55;
-  --muted-2: #5E5E68;
-  --line: #E6E4DD;
-  --chip: #EEEDE8;
-  --accent: #5B3FE0;
-  --accent-dark: #3F27B0;
-  --gold: #F2B84B;
-  --font-body: Inter, system-ui, sans-serif;
-  --font-display: 'Space Grotesk', Inter, system-ui, sans-serif;
-  --mat-app-background-color: var(--bg);
-}
-
 html, body { min-height: 100%; }
+
+/* Colours come from the Material theme (see theme.scss). */
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--ink);
-  font-family: var(--font-body);
+  background: var(--sys-surface);
+  color: var(--sys-on-surface);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--accent); }
-a:hover { color: var(--accent-dark); }
+a { color: var(--sys-primary); }
 
 .container {
   width: 100%;
@@ -43,67 +29,6 @@ a:hover { color: var(--accent-dark); }
 
 @media (max-width: 480px) {
   .container { padding-left: 16px; padding-right: 16px; }
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 48px;
-  padding: 12px 22px;
-  border-radius: 12px;
-  font-weight: 600;
-  font-size: 16px;
-  text-decoration: none;
-}
-.btn-primary, .btn-primary:hover { background: var(--accent); color: #fff; }
-.btn-primary:hover { background: var(--accent-dark); }
-.btn-secondary { border: 1.5px solid #D6D4CC; color: var(--ink); }
-.btn-secondary:hover { color: var(--ink); background: var(--chip); }
-
-.pill {
-  align-self: flex-start;
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-.pill-gold { background: #FFF1D6; color: #7A4B00; }
-.pill-violet { background: #EEEAFF; color: #4A2FC9; }
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
-}
-
-.card {
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.card h3 {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 26px;
-}
-
-.card p {
-  font-size: 15px;
-  color: var(--muted);
-}
-
-@media (max-width: 480px) {
-  .card { padding: 16px; }
-  .card h3 { font-size: 20px; }
 }
 
 .component-wrapper {

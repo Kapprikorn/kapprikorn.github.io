@@ -11,15 +11,19 @@
 }
 
 .footer {
+  background: var(--sys-surface-container);
+  color: var(--sys-on-surface-variant);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-inner {
   padding-top: 24px;
   padding-bottom: 24px;
-  border-top: 1px solid var(--line);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 12px;
-  font-size: 14px;
-  color: var(--muted-2);
 }
 
 .footer a {

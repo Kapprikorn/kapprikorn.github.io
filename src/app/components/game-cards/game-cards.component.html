@@ -1,20 +1,22 @@
 <div class="cards">
   @for (game of games; track game.name) {
-    <article class="card">
+    <mat-card appearance="outlined" class="card">
       <div class="head">
-        <img [src]="game.icon" alt="" width="72" height="72" class="icon">
+        <img [src]="game.icon" alt="" width="56" height="56" class="icon">
         <div class="title">
-          <span class="pill" [class.pill-gold]="game.status === 'Internal testing'" [class.pill-violet]="game.status === 'Closed beta'">{{ game.status }}</span>
+          <span class="chip"
+                [class.chip-outlined]="game.status === 'Internal testing'"
+                [class.chip-tonal]="game.status === 'Closed beta'">{{ game.status }}</span>
           <h3>{{ game.name }}</h3>
         </div>
       </div>
       <p class="desc">{{ game.description }}</p>
-      <p class="meta">
-        Android · Google Play
+      <div class="foot">
+        <span class="meta">Android · Google Play</span>
         @if (game.privacyPolicy) {
-          · <a [href]="game.privacyPolicy">Privacy policy</a>
+          <a mat-button [href]="game.privacyPolicy">Privacy policy</a>
         }
-      </p>
-    </article>
+      </div>
+    </mat-card>
   }
 </div>
