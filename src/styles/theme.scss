@@ -1,0 +1,32 @@
+@use '@angular/material' as mat;
+
+// Material 3 theme with a violet primary. Light is the default; the dark
+// colours take over when the device prefers dark mode. All colours in the app
+// come from the --sys-* variables this emits, so nothing else is hard-coded.
+$typography: (brand-family: 'Roboto', plain-family: 'Roboto');
+
+$light-theme: mat.define-theme((
+  color: (theme-type: light, primary: mat.$violet-palette),
+  typography: $typography,
+  density: (scale: 0)
+));
+
+$dark-theme: mat.define-theme((
+  color: (theme-type: dark, primary: mat.$violet-palette),
+  typography: $typography,
+  density: (scale: 0)
+));
+
+@include mat.core();
+
+html {
+  color-scheme: light dark;
+
+  @include mat.all-component-themes($light-theme);
+  @include mat.system-level-colors($light-theme);
+
+  @media (prefers-color-scheme: dark) {
+    @include mat.all-component-colors($dark-theme);
+    @include mat.system-level-colors($dark-theme);
+  }
+}

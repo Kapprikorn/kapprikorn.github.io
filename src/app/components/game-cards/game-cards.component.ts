@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatAnchor } from '@angular/material/button';
+import { MatCard } from '@angular/material/card';
 
 interface Game {
   name: string;
@@ -11,6 +13,7 @@ interface Game {
 @Component({
   selector: 'app-game-cards',
   standalone: true,
+  imports: [MatCard, MatAnchor],
   templateUrl: './game-cards.component.html',
   styleUrl: './game-cards.component.css'
 })

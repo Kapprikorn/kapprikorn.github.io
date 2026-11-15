@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { MatAnchor } from '@angular/material/button';
 import { GameCardsComponent } from '../../components/game-cards/game-cards.component';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [RouterLink, GameCardsComponent],
+  imports: [RouterLink, MatAnchor, GameCardsComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
 })
